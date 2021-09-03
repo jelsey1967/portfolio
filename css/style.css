@@ -320,10 +320,6 @@
           align-items: center;
 }
 
-.skills__progress {
-  background-color: red;
-}
-
 .skills__list {
   height: 400px;
   width: 400px;
