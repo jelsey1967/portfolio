@@ -269,6 +269,7 @@
 
 .skills {
   height: 100vh;
+  padding: 62px 0 22px 0;
 }
 
 .skills__body {
@@ -281,9 +282,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .skills__title {
@@ -292,23 +290,35 @@
       align-self: center;
 }
 
-.skills__image {
-  width: 300px;
-  height: 394px;
-  background-color: #a65858;
-  position: relative;
-  z-index: 1;
+.slider {
+  width: 100%;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid red;
 }
 
-.skills__image img {
-  position: absolute;
-  bottom: 35px;
-  left: 35px;
-  width: 300px;
-  height: 394px;
+.slider__prev, .slider__next {
+  width: 50px;
+  height: 50px;
 }
 
-.skills__info {
+.slider__prev {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.slider__body {
+  width: 80%;
+  height: 100%;
+  border: 1px solid yellow;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -320,35 +330,22 @@
           align-items: center;
 }
 
-.skills__list {
-  height: 400px;
-  width: 400px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.slider__prev-slide {
+  height: 250px;
+  width: 250px;
+  border: 1px solid brown;
 }
 
-.skills__item {
-  width: 60px;
-  height: 60px;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  -webkit-transition: -webkit-filter 0.2s;
-  transition: -webkit-filter 0.2s;
-  transition: filter 0.2s;
-  transition: filter 0.2s, -webkit-filter 0.2s;
+.slider__main-slide {
+  height: 300px;
+  width: 300px;
+  border: 1px solid blue;
 }
 
-.skills__item:hover {
-  -webkit-filter: grayscale(0%);
-          filter: grayscale(0%);
+.slider__next-slide {
+  height: 250px;
+  width: 250px;
+  border: 1px solid brown;
 }
 
 .footer__body {
