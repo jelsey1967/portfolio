@@ -98,7 +98,7 @@
 }
 
 .main {
-  background-image: url(/img/bg.jpg);
+  background-image: url("../img/bg.jpg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -241,15 +241,15 @@
 }
 
 .works__project:nth-child(1) {
-  background-image: url(/img/project1.png);
+  background-image: url("../img/project1.png");
 }
 
 .works__project:nth-child(2) {
-  background-image: url(/img/project2.png);
+  background-image: url("../img/project2.png");
 }
 
 .works__project:nth-child(3) {
-  background-image: url(/img/project3.png);
+  background-image: url("../img/project3.png");
 }
 
 .works__more {
