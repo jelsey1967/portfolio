@@ -25,7 +25,7 @@ btnPrev.addEventListener("click", function(){
 		slideNext.src = sliderItems[0];
 		slidePrev.src = sliderItems[sliderItems.length - 2];
 	} else if (counter == 0){
-		slidePrev.src = sliderItems[sliderItems.length - 1git ];
+		slidePrev.src = sliderItems[sliderItems.length - 1];
 	} else {
 		slidePrev.src = sliderItems[counter - 1];
 		slideNext.src = sliderItems[counter + 1];
