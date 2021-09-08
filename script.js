@@ -1,12 +1,12 @@
 // slider start
 let sliderItems = [
-	'../img/icon/html.png',
-	'../img/icon/css.png',
-	'../img/icon/vue.png',
-	'../img/icon/scss.png',
-	'../img/icon/figma.png',
-	'../img/icon/git.png',
-	'../img/icon/js.png',
+	'img/icon/html.png',
+	'img/icon/css.png',
+	'img/icon/vue.png',
+	'img/icon/scss.png',
+	'img/icon/figma.png',
+	'img/icon/git.png',
+	'img/icon/js.png',
 ];
 
 let counter = 0;
