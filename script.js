@@ -1,3 +1,4 @@
+// slider start
 let sliderItems = [
 	'/img/icon/html.png',
 	'/img/icon/css.png',
@@ -55,45 +56,16 @@ btnNext.addEventListener("click", function(){
 
 	console.log(counter);
 });
+// slider end
 
+// burger start
+let burgerBtn = document.querySelector('.header__burger');
+let headerNav = document.querySelector('.header__nav');
+let body = document.querySelector('body');
 
-
-
-
-
-
-/* const slider = {
-	data() {
-		return {
-			counter: 0,
-			items: [
-				'/img/icon/html.png',
-				'/img/icon/css.png',
-				'/img/icon/vue.png',
-				'/img/icon/scss.png',
-				'/img/icon/figma.png',
-				'/img/icon/git.png',
-				'/img/icon/js.png',
-			],
-		}
-	},
-	mounted() {
-		ShowPrevSlide(){
-			console.log(ShowPrevSlide)
-			// if (this.counter < 0) {
-			// 	this.counter = this.items.length;
-			// } else {
-			// 	this.counter--;
-			// }
-		},
-		ShowNextSlide(){
-			if (this.counter > this.items.length) {
-				this.counter = 0
-			} else {
-				this.counter++
-			}
-		},
-	},
-}
-
-Vue.createApp(slider).mount('#slider'); */
+burgerBtn.addEventListener('click', function(){
+	headerNav.classList.toggle('active');
+	burgerBtn.classList.toggle('active');
+	body.classList.toggle('lock');
+});
+// burger end
