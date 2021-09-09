@@ -63,7 +63,7 @@ $BGColorFooter: #262221;
 // Стилизация секций
 .header {
 	width: 100%;
-	height: 84px;
+	height: 80px;
 	background-color: transparent;
 	position: absolute;
 	top: 0;
@@ -221,9 +221,8 @@ $BGColorFooter: #262221;
 	&__buttons {
 		display: flex;
 
-		@media (max-width: 425px){
+		@media (max-width: 425px) {
 			flex-direction: column;
-
 		}
 	}
 
@@ -241,7 +240,7 @@ $BGColorFooter: #262221;
 		color: #fff;
 		transition: all 0.2s;
 
-		@media (max-width: 425px){
+		@media (max-width: 425px) {
 			width: 100%;
 		}
 	}
@@ -253,8 +252,8 @@ $BGColorFooter: #262221;
 			background-color: $MainColor;
 		}
 
-		@media (max-width: 425px){
-			margin: 0 0 15px 0;	
+		@media (max-width: 425px) {
+			margin: 0 0 15px 0;
 		}
 	}
 
@@ -326,7 +325,7 @@ $BGColorFooter: #262221;
 			width: 300px;
 			height: 300px;
 
-			&:not(:last-child){
+			&:not(:last-child) {
 				margin: 0 0 20px 0;
 			}
 		}
@@ -387,7 +386,7 @@ $BGColorFooter: #262221;
 		justify-content: space-between;
 		align-items: center;
 
-		@media (max-width: 500px){
+		@media (max-width: 500px) {
 			width: 100%;
 			justify-content: center;
 		}
@@ -440,14 +439,33 @@ $BGColorFooter: #262221;
 		color: #fff;
 	}
 
+	&__list {
+		display: flex;
+		justify-content: space-between;
+
+		@media (max-width: 730px){
+			flex-direction: column;
+		}
+
+		@media (max-width: 500px){
+			align-self: flex-start;
+		}
+	}
+
 	&__link {
+		position: relative;
 		width: 40px;
 		height: 40px;
+		transition: filter 0.2s;
+		cursor: pointer;
 
 		img {
-			width: 40px;
-			height: 40px;
-			transition: filter 0.2s;
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+			background-color: $BGColorDark;
+			position: relative;
+			z-index: 2;
 		}
 
 		&:hover img {
@@ -457,5 +475,32 @@ $BGColorFooter: #262221;
 
 	&__link + &__link {
 		margin-left: calc(30px + 32 * ((100vw - 320px) / (1440 - 320)));
+
+		@media (max-width: 730px){
+			margin: 20px 0 0 0;
+		}
+	}
+
+	.gmail {
+		content: "jelsey1967@gmail.com";
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		top: 0;
+		left: 0;
+		width: 40px;
+		height: 40px;
+		padding-right: 10px;
+		border-radius: 50px;
+		z-index: 1;
+		background-color: $MainColor;
+		color: $BGColor;
+		overflow: hidden;
+		transition: width 0.2s;
+
+		&-active{
+			width: 250px;
+		}
 	}
 }
