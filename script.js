@@ -11,12 +11,20 @@ burgerBtn.addEventListener('click', function () {
 // burger end
 
 // contact start
-
 let linkGmail = document.querySelector('.gmail-link');
 let textGmail = document.querySelector('.gmail');
 
 linkGmail.addEventListener('click', function(){
 	textGmail.classList.toggle('gmail-active');
 });
-
 // contact end
+
+// links start
+document.querySelectorAll('.header__link').forEach((element) => {
+	element.addEventListener('click', function () {
+		headerNav.classList.remove('active');
+		burgerBtn.classList.remove('active');
+		body.classList.remove('lock');
+	});
+});
+// links end

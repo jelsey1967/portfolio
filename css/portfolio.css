@@ -4,7 +4,7 @@
 
 .portfolio {
   padding: 62px 0 70px 0;
-  margin-top: 80px;
+  margin-top: calc(50px + 30 * ((100vw - 320px) / (1440 - 320)));
   background-color: #efefef;
 }
 
