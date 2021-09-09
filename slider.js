@@ -1,12 +1,12 @@
 // slider start
 let sliderItems = [
-	'img/icon/html.png',
-	'img/icon/css.png',
-	'img/icon/vue.png',
-	'img/icon/scss.png',
-	'img/icon/figma.png',
-	'img/icon/git.png',
-	'img/icon/js.png',
+	`<img src="/img/icon/html.png"><p>HTML5</p>`,
+	`<img src="/img/icon/css.png"><p>CSS3</p>`,
+	`<img src="/img/icon/js.png"><p>JavaScript</p>`,
+	`<img src="/img/icon/scss.png"><p>SCSS</p>`,
+	`<img src="/img/icon/git.png"><p>Git</p>`,
+	`<img src="/img/icon/figma.png"><p>Figma</p>`,
+	`<img src="/img/icon/vue.png"><p>Vue</p>`,
 ];
 
 let counter = 0;
@@ -18,21 +18,25 @@ let slidePrev = document.querySelector('.slider__prev-slide');
 let slideMain = document.querySelector('.slider__main-slide');
 let slideNext = document.querySelector('.slider__next-slide');
 
+slidePrev.innerHTML = sliderItems[sliderItems.length - 1];
+slideMain.innerHTML = sliderItems[0];
+slideNext.innerHTML = sliderItems[1];
+
 btnPrev.addEventListener("click", function(){
 	counter--;
 
 	if (counter < 0){
 		counter = sliderItems.length - 1;
-		slideNext.src = sliderItems[0];
-		slidePrev.src = sliderItems[sliderItems.length - 2];
+		slideNext.innerHTML = sliderItems[0];
+		slidePrev.innerHTML = sliderItems[sliderItems.length - 2];
 	} else if (counter == 0){
 		slidePrev.src = sliderItems[sliderItems.length - 1];
 	} else {
-		slidePrev.src = sliderItems[counter - 1];
-		slideNext.src = sliderItems[counter + 1];
+		slidePrev.innerHTML = sliderItems[counter - 1];
+		slideNext.innerHTML = sliderItems[counter + 1];
 	}
 	
-	slideMain.src = sliderItems[counter];
+	slideMain.innerHTML = sliderItems[counter];
 
 	console.log(counter);
 });
@@ -42,17 +46,17 @@ btnNext.addEventListener("click", function(){
 	counter++;
 
 	if (counter == sliderItems.length - 1){
-		slideNext.src = sliderItems[0];
+		slideNext.innerHTML = sliderItems[0];
 	} else if (counter == sliderItems.length){
 		counter = 0;
-		slidePrev.src = sliderItems[sliderItems.length - 1];
-		slideNext.src = sliderItems[counter + 1];
+		slidePrev.innerHTML = sliderItems[sliderItems.length - 1];
+		slideNext.innerHTML = sliderItems[counter + 1];
 	} else {
-		slidePrev.src = sliderItems[counter - 1];
-		slideNext.src = sliderItems[counter + 1];
+		slidePrev.innerHTML = sliderItems[counter - 1];
+		slideNext.innerHTML = sliderItems[counter + 1];
 	}
 
-	slideMain.src = sliderItems[counter];
+	slideMain.innerHTML = sliderItems[counter];
 
 	console.log(counter);
 });

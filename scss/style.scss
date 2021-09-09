@@ -294,7 +294,7 @@ $BGColorFooter: #262221;
 	&__list {
 		width: 100%;
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		margin-bottom: 63px;
 
 		@media (max-width: 500px) {
@@ -305,8 +305,8 @@ $BGColorFooter: #262221;
 	}
 
 	&__project {
-		width: calc(230px + 200 * ((100vw - 768px) / (1440 - 768)));
-		height: calc(230px + 200 * ((100vw - 768px) / (1440 - 768)));
+		width: calc(200px + 150 * ((100vw - 768px) / (1440 - 768)));
+		height: calc(200px + 150 * ((100vw - 768px) / (1440 - 768)));
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -328,6 +328,10 @@ $BGColorFooter: #262221;
 			&:not(:last-child) {
 				margin: 0 0 20px 0;
 			}
+		}
+
+		&:not(:last-child) {
+			margin: 0 25px 0 0;
 		}
 	}
 
@@ -396,12 +400,44 @@ $BGColorFooter: #262221;
 	&__next-slide {
 		height: calc(50px + 100 * ((100vw - 320px) / (1440 - 320)));
 		width: calc(50px + 100 * ((100vw - 320px) / (1440 - 320)));
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		img{
+			width: calc(45px + 100 * ((100vw - 320px) / (1440 - 320)));
+			height: calc(45px + 100 * ((100vw - 320px) / (1440 - 320)));
+		}
+
+		p{
+			color: $BGColorDark;
+			font-size: 20px;
+			font-weight: 400;
+			margin-top: 15px;
+		}
 	}
 
 	&__main-slide {
 		height: calc(100px + 150 * ((100vw - 320px) / (1440 - 320)));
 		width: calc(100px + 150 * ((100vw - 320px) / (1440 - 320)));
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 		margin: 0 10px;
+
+		img{
+			width: calc(80px + 120 * ((100vw - 320px) / (1440 - 320)));
+			height: calc(80px + 120 * ((100vw - 320px) / (1440 - 320)));
+		}
+
+		p{
+			color: $BGColorDark;
+			font-size: 20px;
+			font-weight: 400;
+			margin-top: 15px;
+		}
 	}
 }
 
