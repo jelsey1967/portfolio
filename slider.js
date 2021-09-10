@@ -30,15 +30,13 @@ btnPrev.addEventListener("click", function(){
 		slideNext.innerHTML = sliderItems[0];
 		slidePrev.innerHTML = sliderItems[sliderItems.length - 2];
 	} else if (counter == 0){
-		slidePrev.src = sliderItems[sliderItems.length - 1];
+		slidePrev.innerHTML = sliderItems[sliderItems.length - 1];
 	} else {
 		slidePrev.innerHTML = sliderItems[counter - 1];
 		slideNext.innerHTML = sliderItems[counter + 1];
 	}
 	
 	slideMain.innerHTML = sliderItems[counter];
-
-	console.log(counter);
 });
 
 btnNext.addEventListener("click", function(){
@@ -57,7 +55,5 @@ btnNext.addEventListener("click", function(){
 	}
 
 	slideMain.innerHTML = sliderItems[counter];
-
-	console.log(counter);
 });
 // slider end

@@ -324,14 +324,14 @@ $BGColorFooter: #262221;
 		@media (max-width: 500px) {
 			width: 300px;
 			height: 300px;
-
-			&:not(:last-child) {
-				margin: 0 0 20px 0;
-			}
 		}
 
 		&:not(:last-child) {
 			margin: 0 25px 0 0;
+
+			@media (max-width: 500px) {
+				margin: 0 0 20px 0;
+			}
 		}
 	}
 
@@ -405,12 +405,12 @@ $BGColorFooter: #262221;
 		align-items: center;
 		justify-content: center;
 
-		img{
+		img {
 			width: calc(45px + 100 * ((100vw - 320px) / (1440 - 320)));
 			height: calc(45px + 100 * ((100vw - 320px) / (1440 - 320)));
 		}
 
-		p{
+		p {
 			color: $BGColorDark;
 			font-size: 20px;
 			font-weight: 400;
@@ -427,12 +427,12 @@ $BGColorFooter: #262221;
 		justify-content: center;
 		margin: 0 10px;
 
-		img{
+		img {
 			width: calc(80px + 120 * ((100vw - 320px) / (1440 - 320)));
 			height: calc(80px + 120 * ((100vw - 320px) / (1440 - 320)));
 		}
 
-		p{
+		p {
 			color: $BGColorDark;
 			font-size: 20px;
 			font-weight: 400;
@@ -463,7 +463,8 @@ $BGColorFooter: #262221;
 
 .contact {
 	background-color: $BGColorDark;
-	padding: 63px 0 103px 0;
+	padding-top: calc(50px + 13 * ((100vw - 320px) / (1440 - 320)));
+	padding-bottom: calc(50px + 53 * ((100vw - 320px) / (1440 - 320)));
 
 	&__body {
 		display: flex;
@@ -479,11 +480,11 @@ $BGColorFooter: #262221;
 		display: flex;
 		justify-content: space-between;
 
-		@media (max-width: 730px){
+		@media (max-width: 730px) {
 			flex-direction: column;
 		}
 
-		@media (max-width: 500px){
+		@media (max-width: 500px) {
 			align-self: flex-start;
 		}
 	}
@@ -512,7 +513,7 @@ $BGColorFooter: #262221;
 	&__link + &__link {
 		margin-left: calc(30px + 32 * ((100vw - 320px) / (1440 - 320)));
 
-		@media (max-width: 730px){
+		@media (max-width: 730px) {
 			margin: 20px 0 0 0;
 		}
 	}
@@ -535,7 +536,7 @@ $BGColorFooter: #262221;
 		overflow: hidden;
 		transition: width 0.2s;
 
-		&-active{
+		&-active {
 			width: 250px;
 		}
 	}

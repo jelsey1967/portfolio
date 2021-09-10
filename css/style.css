@@ -386,13 +386,16 @@
     width: 300px;
     height: 300px;
   }
-  .works__project:not(:last-child) {
-    margin: 0 0 20px 0;
-  }
 }
 
 .works__project:not(:last-child) {
   margin: 0 25px 0 0;
+}
+
+@media (max-width: 500px) {
+  .works__project:not(:last-child) {
+    margin: 0 0 20px 0;
+  }
 }
 
 .works__more {
@@ -572,7 +575,8 @@
 
 .contact {
   background-color: #403937;
-  padding: 63px 0 103px 0;
+  padding-top: calc(50px + 13 * ((100vw - 320px) / (1440 - 320)));
+  padding-bottom: calc(50px + 53 * ((100vw - 320px) / (1440 - 320)));
 }
 
 .contact__body {
