@@ -28,3 +28,16 @@ document.querySelectorAll('.header__link').forEach((element) => {
 	});
 });
 // links end
+
+$(document).ready(function () {
+
+	$(window).scroll(function () {
+		let scroll = $(window).scrollTop();
+
+		if (scroll >= 80) {
+			$(".header").addClass("scrolled");
+		} else {
+			$(".header").removeClass("scrolled");
+		}
+	});
+});
