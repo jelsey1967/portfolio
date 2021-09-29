@@ -329,13 +329,13 @@ $BGColorFooter: #262221;
 		background-size: cover;
 
 		&:nth-child(1) {
-			background-image: url("../img/jelsey1967.github.io_Zooov_.png");
+			background-image: url("../img/jelsey1967.github.io_Zooov_.webp");
 		}
 		&:nth-child(2) {
-			background-image: url("../img/jelsey1967.github.io_LaslesVPN_.png");
+			background-image: url("../img/jelsey1967.github.io_LaslesVPN_.webp");
 		}
 		&:nth-child(3) {
-			background-image: url("../img/jelsey1967.github.io_Konstruct_.png");
+			background-image: url("../img/jelsey1967.github.io_Konstruct_.webp");
 		}
 
 		@media (max-width: 500px) {
@@ -554,7 +554,7 @@ $BGColorFooter: #262221;
 		transition: width 0.2s;
 
 		&-active {
-			width: 285px;
+			width: 295px;
 		}
 	}
 }
