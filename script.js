@@ -40,4 +40,8 @@ $(document).ready(function () {
 			$(".header").removeClass("scrolled");
 		}
 	});
+
+	if (document.body.scrollHeight > 0){
+		$(".header").addClass("scrolled");
+	};
 });
