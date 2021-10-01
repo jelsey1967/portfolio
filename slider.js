@@ -3,9 +3,11 @@ let sliderItems = [
 	`<img src="img/icon/html.png"><p>HTML5</p>`,
 	`<img src="img/icon/css.png"><p>CSS3</p>`,
 	`<img src="img/icon/js.png"><p>JavaScript</p>`,
+	`<img src="img/icon/jq.png"><p>Figma</p>`,
+	`<img src="img/icon/figma.png"><p>Figma</p>`,
 	`<img src="img/icon/scss.png"><p>SCSS</p>`,
 	`<img src="img/icon/git.png"><p>Git</p>`,
-	`<img src="img/icon/figma.png"><p>Figma</p>`,
+	`<img src="img/icon/bootstrap.png"><p>Figma</p>`,
 ];
 
 let counter = 0;
