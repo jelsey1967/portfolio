@@ -1,37 +1,29 @@
+$(document).ready(function () {
 // burger start
-let burgerBtn = document.querySelector('.header__burger');
-let headerNav = document.querySelector('.header__nav');
-let body = document.querySelector('body');
-
-burgerBtn.addEventListener('click', function () {
-	headerNav.classList.toggle('active');
-	burgerBtn.classList.toggle('active');
-	body.classList.toggle('lock');
-});
+	$(".header__burger").click(() => {
+		$(".header__nav").toggleClass('active');
+		$(".header__burger").toggleClass('active');
+		$("body").toggleClass('lock');
+	});
 // burger end
 
 // contact start
-let linkGmail = document.querySelector('.gmail-link');
-let textGmail = document.querySelector('.gmail');
-
-linkGmail.addEventListener('click', function(){
-	textGmail.classList.toggle('gmail-active');
-});
+	$(".gmail-link").click(() => {
+		$(".gmail").toggleClass('gmail-active');
+	});
 // contact end
 
 // links start
-document.querySelectorAll('.header__link').forEach((element) => {
-	element.addEventListener('click', function () {
-		headerNav.classList.remove('active');
-		burgerBtn.classList.remove('active');
-		body.classList.remove('lock');
+	document.querySelectorAll('.header__link').forEach((element) => {
+		element.addEventListener('click', function () {
+			headerNav.classList.remove('active');
+			burgerBtn.classList.remove('active');
+			body.classList.remove('lock');
+		});
 	});
-});
 // links end
 
-$(document).ready(function () {
-
-	$(window).scroll(function () {
+	$(window).scroll(() => {
 		let scroll = $(window).scrollTop();
 
 		if (scroll >= 80) {
@@ -41,7 +33,8 @@ $(document).ready(function () {
 		}
 	});
 
-	if (document.body.scrollHeight > 0){
+	if (window.pageYOffset > 80){
 		$(".header").addClass("scrolled");
 	};
+	
 });

@@ -306,8 +306,8 @@
 
 .main__scroll-down {
   position: absolute;
-  bottom: 45px;
-  left: 45%;
+  bottom: 55px;
+  left: 50%;
   width: 40px;
   height: 40px;
   opacity: 0.5;
@@ -315,6 +315,7 @@
   transition: opacity 0.2s;
   -webkit-animation: scrollDown 1s ease 1s infinite alternate;
           animation: scrollDown 1s ease 1s infinite alternate;
+  margin-left: -40px;
 }
 
 .main__scroll-down:hover {
@@ -328,7 +329,7 @@
 
 @-webkit-keyframes scrollDown {
   0% {
-    bottom: 45px;
+    bottom: 55px;
   }
   100% {
     bottom: 75px;
@@ -337,7 +338,7 @@
 
 @keyframes scrollDown {
   0% {
-    bottom: 45px;
+    bottom: 55px;
   }
   100% {
     bottom: 75px;
@@ -397,15 +398,15 @@
 }
 
 .works__project:nth-child(1) {
-  background-image: url("../img/jelsey1967.github.io_Zooov_.png");
+  background-image: url("../img/jelsey1967.github.io_Zooov_.webp");
 }
 
 .works__project:nth-child(2) {
-  background-image: url("../img/jelsey1967.github.io_LaslesVPN_.png");
+  background-image: url("../img/jelsey1967.github.io_LaslesVPN_.webp");
 }
 
 .works__project:nth-child(3) {
-  background-image: url("../img/jelsey1967.github.io_Konstruct_.png");
+  background-image: url("../img/jelsey1967.github.io_Konstruct_.webp");
 }
 
 @media (max-width: 500px) {
@@ -710,5 +711,5 @@
 }
 
 .contact .gmail-active {
-  width: 285px;
+  width: 300px;
 }

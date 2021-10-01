@@ -269,13 +269,14 @@ $BGColorFooter: #262221;
 
 	&__scroll-down {
 		position: absolute;
-		bottom: 45px;
-		left: 55%;
+		bottom: 55px;
+		left: 50%;
 		width: 40px;
 		height: 40px;
 		opacity: 0.5;
 		transition: opacity 0.2s;
 		animation: scrollDown 1s ease 1s infinite alternate;
+		margin-left: -40px;
 
 		&:hover {
 			opacity: 1;
