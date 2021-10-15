@@ -16,9 +16,9 @@ $(document).ready(function () {
 // links start
 	document.querySelectorAll('.header__link').forEach((element) => {
 		element.addEventListener('click', function () {
-			headerNav.classList.remove('active');
-			burgerBtn.classList.remove('active');
-			body.classList.remove('lock');
+			$('.header__nav').removeClass('active');
+			$('.header__burger').removeClass('active');
+			$('body').removeClass('lock');
 		});
 	});
 // links end
