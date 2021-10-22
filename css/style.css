@@ -399,15 +399,15 @@
 }
 
 .works__project:nth-child(1) {
-  background-image: url("../img/jelsey1967.github.io_Zooov_.webp");
+  background-image: url("../img/project6.webp");
 }
 
 .works__project:nth-child(2) {
-  background-image: url("../img/jelsey1967.github.io_LaslesVPN_.webp");
+  background-image: url("../img/jelsey1967.github.io_Zooov_.webp");
 }
 
 .works__project:nth-child(3) {
-  background-image: url("../img/jelsey1967.github.io_Konstruct_.webp");
+  background-image: url("../img/jelsey1967.github.io_LaslesVPN_.webp");
 }
 
 @media (max-width: 500px) {

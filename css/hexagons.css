@@ -13,7 +13,7 @@
   position: relative;
   visibility:hidden;
   outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
-  width: 26%; /* = 100 / 3 */
+  width: 24%; /* = 100 / 3 */
   margin: calc(0px + 5 * ((100vw - 320px) / (1440 - 320)));
 }
 .hex::after{
@@ -21,8 +21,8 @@
   display:block;
   padding-bottom: 86.602%;  /* =  100 / tan(60) * 1.5 */
 }
-.hex:nth-child(5n+4){ /* first hexagon of even rows */
-   margin-left: 0%;  /* = width of .hex / 2  to indent even rows */
+.hex:nth-child(3n+4){ /* first hexagon of even rows */
+   margin-left: 25%;  /* = width of .hex / 2  to indent even rows */
 }
 .hexIn{
   position: absolute;
@@ -46,11 +46,19 @@
     width: 100%;
     height: 100%;
     text-align: center;
+	 background-color: rgba(204, 204, 204, 0.308);
     color: #fff;
     overflow: hidden;
     -webkit-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
         -ms-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
             transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+}
+
+.hexLink{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: rgb(49, 49, 49);
 }
 
 /*** HEX CONTENT **********************************************************************/
