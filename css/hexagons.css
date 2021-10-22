@@ -21,8 +21,11 @@
   display:block;
   padding-bottom: 86.602%;  /* =  100 / tan(60) * 1.5 */
 }
-.hex:nth-child(3n+4){ /* first hexagon of even rows */
-   margin-left: 25%;  /* = width of .hex / 2  to indent even rows */
+.hex:nth-child(3n+4){
+   margin-left: 25%;
+}
+.hex:nth-child(7){
+   margin-left: 0%;
 }
 .hexIn{
   position: absolute;
