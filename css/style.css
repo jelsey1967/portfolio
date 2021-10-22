@@ -303,6 +303,34 @@
 
 .main__portfolio-button {
   background-color: #a65858;
+  overflow: hidden;
+  position: relative;
+}
+
+.main__portfolio-button span {
+  z-index: 10;
+}
+
+.main__portfolio-button:after {
+  background: #fff;
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: 0.2;
+  position: absolute;
+  top: -50px;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+  -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 50px;
+  z-index: 5;
+}
+
+.main__portfolio-button:hover:after {
+  left: 120%;
+  -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .main__scroll-down {

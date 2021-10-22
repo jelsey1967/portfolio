@@ -118,7 +118,7 @@ $BGColorFooter: #262221;
 		}
 	}
 
-	&.scrolled{
+	&.scrolled {
 		background-color: $BGColorDark;
 		height: calc(40px + 20 * ((100vw - 320px) / (1440 - 320)));
 	}
@@ -266,6 +266,33 @@ $BGColorFooter: #262221;
 
 	&__portfolio-button {
 		background-color: $MainColor;
+		overflow: hidden;
+		position: relative;
+
+		span {
+			z-index: 10;
+		}
+
+		&:after {
+			background: #fff;
+			content: "";
+			height: 155px;
+			left: -75px;
+			opacity: 0.2;
+			position: absolute;
+			top: -50px;
+			transform: rotate(35deg);
+			transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+			width: 50px;
+			z-index: 5;
+		}
+		
+		&:hover {
+			&:after {
+				left: 120%;
+				transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+			}	
+		}
 	}
 
 	&__scroll-down {
@@ -291,11 +318,11 @@ $BGColorFooter: #262221;
 }
 
 @keyframes scrollDown {
-	0%{
+	0% {
 		bottom: 55px;
 	}
 
-	100%{
+	100% {
 		bottom: 75px;
 	}
 }
